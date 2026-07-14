@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 1210" font-family="IBM Plex Sans, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2733"/></marker><marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2e5d43"/></marker><marker id="arra" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a4a12"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a33a2a"/></marker></defs>
+<rect x="0" y="0" width="1560" height="1210" rx="18" fill="#f2f5ea" stroke="#d8dfcd"/>
+<text x="44" y="52" font-size="15" letter-spacing="4" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">ENTERPRISE GCP DATA PLATFORM · INFRASTRUCTURE</text>
+<text x="1516" y="52" text-anchor="end" font-size="13" fill="#8a958b" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">SOURCES → PRIVATE VPC → LAKEHOUSE → CONSUMERS</text>
+<rect x="40" y="84" width="356" height="1080" rx="14" fill="none" stroke="#5c6b60" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="58" y="111" font-size="12.5" letter-spacing="3" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">EXTERNAL DATA SOURCES</text>
+<rect x="60" y="128" width="316" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="128" width="6" height="112" rx="3" fill="#1b2733"/>
+<text x="82" y="158" font-size="16" font-weight="700" fill="#16232e">Cloud PMS (SaaS)</text>
+<text x="82" y="178" font-size="12.5" fill="#5c6b60">reservations · rates · folio</text>
+<rect x="80" y="203" width="132" height="24" rx="7" fill="#eef2e4"/>
+<text x="90" y="220" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">HTTPS 443 · REST</text>
+<rect x="60" y="255" width="316" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="255" width="6" height="112" rx="3" fill="#1b2733"/>
+<text x="82" y="285" font-size="16" font-weight="700" fill="#16232e">Legacy PMS A / B</text>
+<text x="82" y="305" font-size="12.5" fill="#5c6b60">on-prem property systems</text>
+<rect x="80" y="330" width="174" height="24" rx="7" fill="#eef2e4"/>
+<text x="90" y="347" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">nightly room inventory</text>
+<rect x="60" y="382" width="316" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="382" width="6" height="112" rx="3" fill="#1b2733"/>
+<text x="82" y="412" font-size="16" font-weight="700" fill="#16232e">EPM Financial Cube</text>
+<text x="82" y="432" font-size="12.5" fill="#5c6b60">on-prem planning system</text>
+<rect x="80" y="457" width="153" height="24" rx="7" fill="#fbf7ec"/>
+<text x="90" y="474" font-size="11.5" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">MDX API · IPsec VPN</text>
+<rect x="60" y="509" width="316" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="509" width="6" height="112" rx="3" fill="#1b2733"/>
+<text x="82" y="539" font-size="16" font-weight="700" fill="#16232e">CRM Platform (SaaS)</text>
+<text x="82" y="559" font-size="12.5" fill="#5c6b60">guest &amp; account data</text>
+<rect x="80" y="584" width="146" height="24" rx="7" fill="#eef2e4"/>
+<text x="90" y="601" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">HTTPS 443 · OAuth2</text>
+<rect x="60" y="636" width="316" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="636" width="6" height="112" rx="3" fill="#1b2733"/>
+<text x="82" y="666" font-size="16" font-weight="700" fill="#16232e">ESG Data Platform</text>
+<text x="82" y="686" font-size="12.5" fill="#5c6b60">carbon &amp; utilities API</text>
+<rect x="80" y="711" width="83" height="24" rx="7" fill="#eef2e4"/>
+<text x="90" y="728" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">HTTPS 443</text>
+<rect x="60" y="763" width="316" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="763" width="6" height="112" rx="3" fill="#1b2733"/>
+<text x="82" y="793" font-size="16" font-weight="700" fill="#16232e">Corporate Doc Platform</text>
+<text x="82" y="813" font-size="12.5" fill="#5c6b60">curated business files</text>
+<rect x="80" y="838" width="118" height="24" rx="7" fill="#eef2e4"/>
+<text x="90" y="855" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">site API · 443</text>
+<rect x="60" y="890" width="316" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="890" width="6" height="112" rx="3" fill="#1b2733"/>
+<text x="82" y="920" font-size="16" font-weight="700" fill="#16232e">News / RSS Feeds</text>
+<text x="82" y="940" font-size="12.5" fill="#5c6b60">~58 curated sources</text>
+<rect x="80" y="965" width="118" height="24" rx="7" fill="#eef2e4"/>
+<text x="90" y="982" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">read-only poll</text>
+<rect x="60" y="1017" width="316" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="1017" width="6" height="112" rx="3" fill="#1b2733"/>
+<text x="82" y="1047" font-size="16" font-weight="700" fill="#16232e">Email Delivery (SendGrid)</text>
+<text x="82" y="1067" font-size="12.5" fill="#5c6b60">outbound mail vendor</text>
+<rect x="80" y="1092" width="139" height="24" rx="7" fill="#eef0f3"/>
+<text x="90" y="1109" font-size="11.5" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">egress only · 443</text>
+<rect x="436" y="84" width="756" height="1080" rx="14" fill="none" stroke="#2e5d43" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="454" y="111" font-size="12.5" letter-spacing="3" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">GOOGLE CLOUD PLATFORM · DATA PLATFORM VPC (X.X.X.X/16)</text>
+<rect x="456" y="128" width="716" height="200" rx="14" fill="none" stroke="#8a4a12" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="474" y="155" font-size="12.5" letter-spacing="3" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">EGRESS / HYBRID GATEWAY</text>
+<rect x="476" y="168" width="210" height="140" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="476" y="168" width="6" height="140" rx="3" fill="#8a4a12"/>
+<text x="498" y="198" font-size="16" font-weight="700" fill="#16232e">Cloud NAT</text>
+<text x="498" y="218" font-size="12.5" fill="#5c6b60">static egress IPs</text>
+<text x="498" y="249" font-size="13" fill="#33413a">allow-listed by SaaS</text>
+<rect x="706" y="168" width="210" height="140" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="706" y="168" width="6" height="140" rx="3" fill="#8a4a12"/>
+<text x="728" y="198" font-size="16" font-weight="700" fill="#16232e">Cloud Router</text>
+<text x="728" y="218" font-size="12.5" fill="#5c6b60">dynamic BGP routes</text>
+<text x="728" y="249" font-size="13" fill="#33413a">route to on-prem</text>
+<rect x="936" y="168" width="216" height="140" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="936" y="168" width="6" height="140" rx="3" fill="#8a4a12"/>
+<text x="958" y="198" font-size="16" font-weight="700" fill="#16232e">Cloud VPN Gateway</text>
+<text x="958" y="218" font-size="12.5" fill="#5c6b60">IPsec tunnel</text>
+<text x="958" y="249" font-size="13" fill="#33413a">EPM cube · MDX</text>
+<rect x="456" y="356" width="716" height="330" rx="14" fill="none" stroke="#2e5d43" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="474" y="383" font-size="12.5" letter-spacing="3" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">PRIVATE SUBNET (X.X.X.X/20) · NO PUBLIC IPs</text>
+<rect x="476" y="400" width="340" height="128" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="476" y="400" width="6" height="128" rx="3" fill="#1b2733"/>
+<text x="498" y="430" font-size="16" font-weight="700" fill="#16232e">Dataflow</text>
+<text x="498" y="450" font-size="12.5" fill="#5c6b60">streaming + batch workers</text>
+<text x="498" y="481" font-size="13" fill="#33413a">source → silver ingestion</text>
+<rect x="496" y="495" width="90" height="24" rx="7" fill="#eef2e4"/>
+<text x="506" y="512" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">private IP</text>
+<rect x="836" y="400" width="316" height="128" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="836" y="400" width="6" height="128" rx="3" fill="#1b2733"/>
+<text x="858" y="430" font-size="16" font-weight="700" fill="#16232e">Cloud Composer</text>
+<text x="858" y="450" font-size="12.5" fill="#5c6b60">managed Airflow</text>
+<text x="858" y="481" font-size="13" fill="#33413a">orchestrates all pipelines</text>
+<rect x="856" y="495" width="90" height="24" rx="7" fill="#eef2e4"/>
+<text x="866" y="512" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">private IP</text>
+<rect x="476" y="546" width="340" height="128" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="476" y="546" width="6" height="128" rx="3" fill="#1b2733"/>
+<text x="498" y="576" font-size="16" font-weight="700" fill="#16232e">Dataproc</text>
+<text x="498" y="596" font-size="12.5" fill="#5c6b60">Spark transforms</text>
+<text x="498" y="627" font-size="13" fill="#33413a">silver → gold modeling</text>
+<rect x="496" y="641" width="90" height="24" rx="7" fill="#eef2e4"/>
+<text x="506" y="658" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">private IP</text>
+<rect x="836" y="546" width="316" height="128" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="836" y="546" width="6" height="128" rx="3" fill="#1b2733"/>
+<text x="858" y="576" font-size="16" font-weight="700" fill="#16232e">Cloud Run (ingestion)</text>
+<text x="858" y="596" font-size="12.5" fill="#5c6b60">API pullers · pollers</text>
+<text x="858" y="627" font-size="13" fill="#33413a">REST / RSS collectors</text>
+<rect x="856" y="641" width="90" height="24" rx="7" fill="#eef2e4"/>
+<text x="866" y="658" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">private IP</text>
+<rect x="476" y="726" width="340" height="152" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="476" y="726" width="6" height="152" rx="3" fill="#1b2733"/>
+<text x="498" y="756" font-size="16" font-weight="700" fill="#16232e">BigQuery Lakehouse</text>
+<text x="498" y="776" font-size="12.5" fill="#5c6b60">silver → gold datasets</text>
+<text x="498" y="807" font-size="13" fill="#33413a">finance_gold · operations_gold</text>
+<text x="498" y="827" font-size="13" fill="#33413a">operations_silver · email_config</text>
+<rect x="496" y="841" width="181" height="24" rx="7" fill="#eef2e4"/>
+<text x="506" y="858" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">partitioned + clustered</text>
+<rect x="836" y="726" width="316" height="152" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="836" y="726" width="6" height="152" rx="3" fill="#1b2733"/>
+<text x="858" y="756" font-size="16" font-weight="700" fill="#16232e">Cloud Storage</text>
+<text x="858" y="776" font-size="12.5" fill="#5c6b60">landing + runtime assets</text>
+<text x="858" y="807" font-size="13" fill="#33413a">raw landing zone</text>
+<text x="858" y="827" font-size="13" fill="#33413a">service runtime bundles</text>
+<rect x="856" y="841" width="188" height="24" rx="7" fill="#eef2e4"/>
+<text x="866" y="858" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">uniform bucket-level ACL</text>
+<rect x="476" y="916" width="340" height="128" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="476" y="916" width="6" height="128" rx="3" fill="#1b2733"/>
+<text x="498" y="946" font-size="16" font-weight="700" fill="#16232e">Apigee API Gateway</text>
+<text x="498" y="966" font-size="12.5" fill="#5c6b60">governed data products</text>
+<text x="498" y="997" font-size="13" fill="#33413a">OAuth2 / JWT · quotas</text>
+<rect x="496" y="1011" width="125" height="24" rx="7" fill="#eef0f3"/>
+<text x="506" y="1028" font-size="11.5" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">gold views only</text>
+<rect x="836" y="916" width="316" height="128" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="836" y="916" width="6" height="128" rx="3" fill="#1b2733"/>
+<text x="858" y="946" font-size="16" font-weight="700" fill="#16232e">Workload Services</text>
+<text x="858" y="966" font-size="12.5" fill="#5c6b60">Cloud Run · Scheduler</text>
+<text x="858" y="997" font-size="13" fill="#33413a">newsletter + reporting engines</text>
+<rect x="856" y="1011" width="167" height="24" rx="7" fill="#eef0f3"/>
+<text x="866" y="1028" font-size="11.5" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">see workflow diagrams</text>
+<rect x="1232" y="84" width="288" height="460" rx="14" fill="none" stroke="#5c6b60" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="1250" y="111" font-size="12.5" letter-spacing="3" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">OBSERVABILITY</text>
+<rect x="1252" y="128" width="248" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1252" y="128" width="6" height="112" rx="3" fill="#1b2733"/>
+<text x="1274" y="158" font-size="16" font-weight="700" fill="#16232e">Cloud Monitoring</text>
+<text x="1274" y="178" font-size="12.5" fill="#5c6b60">SLO dashboards</text>
+<rect x="1272" y="203" width="125" height="24" rx="7" fill="#fbf7ec"/>
+<text x="1282" y="220" font-size="11.5" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">uptime · alerts</text>
+<rect x="1252" y="258" width="248" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1252" y="258" width="6" height="112" rx="3" fill="#1b2733"/>
+<text x="1274" y="288" font-size="16" font-weight="700" fill="#16232e">Cloud Logging</text>
+<text x="1274" y="308" font-size="12.5" fill="#5c6b60">structured run logs</text>
+<rect x="1272" y="333" width="118" height="24" rx="7" fill="#fbf7ec"/>
+<text x="1282" y="350" font-size="11.5" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">per-run health</text>
+<rect x="1252" y="388" width="248" height="128" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1252" y="388" width="6" height="128" rx="3" fill="#1b2733"/>
+<text x="1274" y="418" font-size="16" font-weight="700" fill="#16232e">Secret Manager</text>
+<text x="1274" y="438" font-size="12.5" fill="#5c6b60">runtime credentials</text>
+<text x="1274" y="469" font-size="13" fill="#33413a">no secrets in code /</text>
+<text x="1274" y="489" font-size="13" fill="#33413a">env files</text>
+<rect x="1232" y="584" width="288" height="580" rx="14" fill="none" stroke="#1b2733" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="1250" y="611" font-size="12.5" letter-spacing="3" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">CONSUMERS</text>
+<rect x="1252" y="628" width="248" height="128" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1252" y="628" width="6" height="128" rx="3" fill="#1b2733"/>
+<text x="1274" y="658" font-size="16" font-weight="700" fill="#16232e">BI Platform</text>
+<text x="1274" y="678" font-size="12.5" fill="#5c6b60">exec dashboards</text>
+<text x="1274" y="709" font-size="13" fill="#33413a">deep links from emails</text>
+<rect x="1252" y="774" width="248" height="128" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1252" y="774" width="6" height="128" rx="3" fill="#1b2733"/>
+<text x="1274" y="804" font-size="16" font-weight="700" fill="#16232e">Internal Apps</text>
+<text x="1274" y="824" font-size="12.5" fill="#5c6b60">low-code tools</text>
+<text x="1274" y="855" font-size="13" fill="#33413a">via Apigee products</text>
+<rect x="1252" y="920" width="248" height="224" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1252" y="920" width="6" height="224" rx="3" fill="#1b2733"/>
+<text x="1274" y="950" font-size="16" font-weight="700" fill="#16232e">Email Recipients</text>
+<text x="1274" y="970" font-size="12.5" fill="#5c6b60">curated stakeholder lists</text>
+<text x="1274" y="1001" font-size="13" fill="#33413a">AI-curated newsletters</text>
+<text x="1274" y="1021" font-size="13" fill="#33413a">property performance</text>
+<text x="1274" y="1041" font-size="13" fill="#33413a">reports · weekly / monthly</text>
+<rect x="1272" y="1055" width="118" height="24" rx="7" fill="#eef2e4"/>
+<text x="1282" y="1072" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">SendGrid · 202</text>
+<polyline points="376,184 436,184" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="390.0" y="162.0" width="32" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="406.0" y="176.0" text-anchor="middle" font-size="12" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">443</text>
+<polyline points="376,311 436,311" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="376,438 416,438 416,318 456,318" fill="none" stroke="#8a4a12" stroke-width="2" marker-end="url(#arra)"/>
+<rect x="370.5" y="416.0" width="47" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="394.0" y="430.0" text-anchor="middle" font-size="12" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">IPsec</text>
+<polyline points="376,565 436,565" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="376,692 436,692" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="376,819 436,819" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="376,946 436,946" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="994,1044 994,1096 376,1096" fill="none" stroke="#2e5d43" stroke-width="2" marker-end="url(#arrg)"/>
+<rect x="675.3000000000001" y="1074.0" width="143" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="746.8000000000001" y="1088.0" text-anchor="middle" font-size="12" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">mail send · egress</text>
+<polyline points="814,328 814,356" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="646,686 646,726" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="626.5" y="684.0" width="39" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="646.0" y="698.0" text-anchor="middle" font-size="12" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">load</text>
+<polyline points="994,686 994,726" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="970.5" y="684.0" width="47" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="994.0" y="698.0" text-anchor="middle" font-size="12" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">write</text>
+<polyline points="646,878 646,916" fill="none" stroke="#2e5d43" stroke-width="2" marker-end="url(#arrg)"/>
+<rect x="604.0" y="875.0" width="84" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="646.0" y="889.0" text-anchor="middle" font-size="12" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">gold views</text>
+<polyline points="994,878 994,916" fill="none" stroke="#2e5d43" stroke-width="2" marker-end="url(#arrg)"/>
+<rect x="941.0" y="875.0" width="106" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="994.0" y="889.0" text-anchor="middle" font-size="12" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">runtime fetch</text>
+<polyline points="646,1044 646,1130 1212,1130 1212,838 1252,838" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="754.98" y="1108.0" width="99" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="804.48" y="1122.0" text-anchor="middle" font-size="12" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">OAuth2 / JWT</text>
+<polyline points="1152,980 1252,980" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="1232,184 1172,184" fill="none" stroke="#8a4a12" stroke-width="2" stroke-dasharray="7 5"/>
+<polyline points="1232,314 1172,314" fill="none" stroke="#8a4a12" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1240" y="566" font-size="12" fill="#5c6b60">dashed: metrics + logs from every VPC service</text>
+</svg>

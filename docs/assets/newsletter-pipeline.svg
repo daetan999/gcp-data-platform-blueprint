@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 1680" font-family="IBM Plex Sans, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2733"/></marker><marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2e5d43"/></marker><marker id="arra" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a4a12"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a33a2a"/></marker></defs>
+<rect x="0" y="0" width="1560" height="1680" rx="18" fill="#f2f5ea" stroke="#d8dfcd"/>
+<text x="44" y="52" font-size="15" letter-spacing="4" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">BEACON · AI NEWSLETTER ENGINE · SEND WORKFLOW</text>
+<text x="1516" y="52" text-anchor="end" font-size="13" fill="#8a958b" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">TRIGGER → CURATE → RESOLVE → DELIVER</text>
+<rect x="40" y="84" width="1480" height="216" rx="14" fill="none" stroke="#5c6b60" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="58" y="111" font-size="12.5" letter-spacing="3" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">TRIGGER + RUNTIME</text>
+<circle cx="100" cy="192" r="11" fill="#1b2733" stroke="#1b2733" stroke-width="2.5"/>
+<text x="100" y="226" text-anchor="middle" font-size="12.5" letter-spacing="2" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">CRON</text>
+<rect x="150" y="116" width="380" height="152" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="150" y="116" width="6" height="152" rx="3" fill="#1b2733"/>
+<text x="172" y="146" font-size="16" font-weight="700" fill="#16232e">Cloud Scheduler</text>
+<text x="172" y="166" font-size="12.5" fill="#5c6b60">one job per newsletter topic</text>
+<text x="172" y="197" font-size="13" fill="#33413a">cron fires → authenticated POST /run</text>
+<text x="172" y="217" font-size="13" fill="#33413a">all jobs individually pausable</text>
+<rect x="170" y="231" width="167" height="24" rx="7" fill="#eef2e4"/>
+<text x="180" y="248" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">OIDC service identity</text>
+<rect x="570" y="116" width="420" height="152" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="570" y="116" width="6" height="152" rx="3" fill="#1b2733"/>
+<text x="592" y="146" font-size="16" font-weight="700" fill="#16232e">Cloud Run Runner</text>
+<text x="592" y="166" font-size="12.5" fill="#5c6b60">stateless execution shell</text>
+<text x="592" y="197" font-size="13" fill="#33413a">downloads target script + 3 shared helpers</text>
+<text x="592" y="217" font-size="13" fill="#33413a">from GCS into /tmp · runs via subprocess</text>
+<rect x="590" y="231" width="181" height="24" rx="7" fill="#eef2e4"/>
+<text x="600" y="248" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">commit-versioned assets</text>
+<rect x="1030" y="116" width="460" height="152" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1030" y="116" width="6" height="152" rx="3" fill="#1b2733"/>
+<text x="1052" y="146" font-size="16" font-weight="700" fill="#16232e">Secret + Env Load</text>
+<text x="1052" y="166" font-size="12.5" fill="#5c6b60">Secret Manager at start-up</text>
+<text x="1052" y="197" font-size="13" fill="#33413a">mail API key · token key · model + region env</text>
+<text x="1052" y="217" font-size="13" fill="#33413a">hard-fail if missing — no silent degrade</text>
+<rect x="1050" y="231" width="160" height="24" rx="7" fill="#eef2e4"/>
+<text x="1060" y="248" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">zero secrets in code</text>
+<polyline points="530,192 570,192" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="990,192 1030,192" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="40" y="322" width="1480" height="660" rx="14" fill="none" stroke="#2e5d43" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="58" y="349" font-size="12.5" letter-spacing="3" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">CONTENT PIPELINE · GCS + GEMINI</text>
+<rect x="60" y="366" width="440" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="366" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="82" y="396" font-size="16" font-weight="700" fill="#16232e">RSS Reliability Layer</text>
+<text x="82" y="416" font-size="12.5" fill="#5c6b60">shared fetch helper · ~58 sources</text>
+<text x="82" y="447" font-size="13" fill="#33413a">browser-profile headers · retry / backoff</text>
+<text x="82" y="467" font-size="13" fill="#33413a">classifies 8 outcome statuses per source</text>
+<text x="82" y="487" font-size="13" fill="#33413a">emits per-source + per-run health logs</text>
+<rect x="80" y="501" width="146" height="24" rx="7" fill="#eef2e4"/>
+<text x="90" y="518" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">HTML-200 detection</text>
+<rect x="540" y="366" width="440" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="540" y="366" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="562" y="396" font-size="16" font-weight="700" fill="#16232e">Gemini Screen · Call 1</text>
+<text x="562" y="416" font-size="12.5" fill="#5c6b60">relevance + quality gate</text>
+<text x="562" y="447" font-size="13" fill="#33413a">scores each article against the topic</text>
+<text x="562" y="467" font-size="13" fill="#33413a">brief · drops thin or off-scope items</text>
+<rect x="560" y="481" width="153" height="24" rx="7" fill="#eef2e4"/>
+<text x="570" y="498" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">structured JSON out</text>
+<rect x="1020" y="366" width="470" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1020" y="366" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="1042" y="396" font-size="16" font-weight="700" fill="#16232e">Best-Survivor Dedup</text>
+<text x="1042" y="416" font-size="12.5" fill="#5c6b60">deterministic Python — not the model</text>
+<text x="1042" y="447" font-size="13" fill="#33413a">similar-title clusters keep the most</text>
+<text x="1042" y="467" font-size="13" fill="#33413a">informative headline (figures + length)</text>
+<rect x="1040" y="481" width="139" height="24" rx="7" fill="#eef0f3"/>
+<text x="1050" y="498" font-size="11.5" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">_headline_score()</text>
+<polyline points="500,452 540,452" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="980,452 1020,452" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="1020" y="592" width="470" height="152" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1020" y="592" width="6" height="152" rx="3" fill="#1b2733"/>
+<text x="1042" y="622" font-size="16" font-weight="700" fill="#16232e">Gemini Rank · Call 2</text>
+<text x="1042" y="642" font-size="12.5" fill="#5c6b60">rank + diversity select</text>
+<text x="1042" y="673" font-size="13" fill="#33413a">orders survivors · enforces source and</text>
+<text x="1042" y="693" font-size="13" fill="#33413a">region diversity · selects top N</text>
+<rect x="1040" y="707" width="97" height="24" rx="7" fill="#eef2e4"/>
+<text x="1050" y="724" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">top-N slate</text>
+<polyline points="1255,538 1255,592" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polygon points="780,616 900,668 780,720 660,668" fill="#fbf7ec" stroke="#8a4a12" stroke-width="1.6"/>
+<text x="780" y="666" text-anchor="middle" font-size="12.5" font-weight="600" fill="#8a4a12">≥ 5</text>
+<text x="780" y="682" text-anchor="middle" font-size="12.5" font-weight="600" fill="#8a4a12">articles pass?</text>
+<polyline points="1020,668 900,668" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="660,668 200,668 200,706" fill="none" stroke="#a33a2a" stroke-width="2" marker-end="url(#arrr)"/>
+<rect x="262.5" y="646.0" width="151" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="338.0" y="660.0" text-anchor="middle" font-size="12" fill="#a33a2a" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">no · log + exit run</text>
+<circle cx="200" cy="720" r="11" fill="#1b2733" stroke="#1b2733" stroke-width="2.5"/>
+<text x="200" y="754" text-anchor="middle" font-size="12.5" letter-spacing="2" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">NO CONTENT</text>
+<polyline points="780,720 780,782" fill="none" stroke="#2e5d43" stroke-width="2" marker-end="url(#arrg)"/>
+<rect x="764.0" y="729.0" width="32" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="780.0" y="743.0" text-anchor="middle" font-size="12" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">yes</text>
+<rect x="560" y="782" width="440" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="560" y="782" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="582" y="812" font-size="16" font-weight="700" fill="#16232e">Gemini Narrative · Call 3</text>
+<text x="582" y="832" font-size="12.5" fill="#5c6b60">summary + takeaway per article</text>
+<text x="582" y="863" font-size="13" fill="#33413a">FACTUAL FIDELITY rules: dates, figures,</text>
+<text x="582" y="883" font-size="13" fill="#33413a">currencies reproduced exactly · self-check</text>
+<rect x="580" y="897" width="146" height="24" rx="7" fill="#fbf7ec"/>
+<text x="590" y="914" font-size="11.5" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">anti-hallucination</text>
+<rect x="60" y="782" width="440" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="782" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="82" y="812" font-size="16" font-weight="700" fill="#16232e">Deterministic Year Gate</text>
+<text x="82" y="832" font-size="12.5" fill="#5c6b60">validate_briefing()</text>
+<text x="82" y="863" font-size="13" fill="#33413a">any year in output absent from that</text>
+<text x="82" y="883" font-size="13" fill="#33413a">article's source context ⇒ flagged issue</text>
+<rect x="80" y="897" width="195" height="24" rx="7" fill="#eef0f3"/>
+<text x="90" y="914" font-size="11.5" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">regex · FY26 · 1H26 · '26</text>
+<polyline points="560,868 500,868" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="506.5" y="846.0" width="47" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="530.0" y="860.0" text-anchor="middle" font-size="12" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">draft</text>
+<polyline points="280,782 280,758 660,758 660,782" fill="none" stroke="#8a4a12" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arra)"/>
+<rect x="372.0" y="736.0" width="196" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="470.0" y="750.0" text-anchor="middle" font-size="12" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">retry with issue feedback</text>
+<rect x="40" y="1004" width="1480" height="224" rx="14" fill="none" stroke="#5c6b60" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="58" y="1031" font-size="12.5" letter-spacing="3" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">RECIPIENT RESOLUTION · BIGQUERY</text>
+<rect x="60" y="1048" width="440" height="152" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="1048" width="6" height="152" rx="3" fill="#1b2733"/>
+<text x="82" y="1078" font-size="16" font-weight="700" fill="#16232e">Query Active Recipients</text>
+<text x="82" y="1098" font-size="12.5" fill="#5c6b60">email_recipient_mapping</text>
+<text x="82" y="1129" font-size="13" fill="#33413a">send_mode = production · is_active</text>
+<text x="82" y="1149" font-size="13" fill="#33413a">newsletter-type catalog check (fail-open)</text>
+<rect x="80" y="1163" width="139" height="24" rx="7" fill="#eef2e4"/>
+<text x="90" y="1180" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">parameterized SQL</text>
+<rect x="540" y="1048" width="440" height="152" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="540" y="1048" width="6" height="152" rx="3" fill="#1b2733"/>
+<text x="562" y="1078" font-size="16" font-weight="700" fill="#16232e">Query Unsubscribes</text>
+<text x="562" y="1098" font-size="12.5" fill="#5c6b60">newsletter_unsubscribe</text>
+<text x="562" y="1129" font-size="13" fill="#33413a">topic-level or 'all' opt-outs</text>
+<rect x="560" y="1143" width="132" height="24" rx="7" fill="#eef0f3"/>
+<text x="570" y="1160" font-size="11.5" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">MERGE-maintained</text>
+<rect x="1020" y="1048" width="470" height="152" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1020" y="1048" width="6" height="152" rx="3" fill="#1b2733"/>
+<text x="1042" y="1078" font-size="16" font-weight="700" fill="#16232e">Resolve Send List</text>
+<text x="1042" y="1098" font-size="12.5" fill="#5c6b60">active − unsubscribed · deduped</text>
+<text x="1042" y="1129" font-size="13" fill="#33413a">empty list ⇒ hard failure surfaced</text>
+<text x="1042" y="1149" font-size="13" fill="#33413a">to the runner — never a silent no-op</text>
+<rect x="1040" y="1163" width="146" height="24" rx="7" fill="#fdf1ef"/>
+<text x="1050" y="1180" font-size="11.5" fill="#a33a2a" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">hard-fail contract</text>
+<polyline points="280,954 280,1048" fill="none" stroke="#2e5d43" stroke-width="2" marker-end="url(#arrg)"/>
+<rect x="223.0" y="979.0" width="114" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="280.0" y="993.0" text-anchor="middle" font-size="12" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">clean briefing</text>
+<polyline points="500,1124 540,1124" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="980,1124 1020,1124" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="40" y="1250" width="1480" height="390" rx="14" fill="none" stroke="#1b2733" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="58" y="1277" font-size="12.5" letter-spacing="3" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">DELIVERY · SENDGRID</text>
+<rect x="60" y="1294" width="440" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="1294" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="82" y="1324" font-size="16" font-weight="700" fill="#16232e">Unsubscribe Footer Mint</text>
+<text x="82" y="1344" font-size="12.5" fill="#5c6b60">Fernet token per recipient</text>
+<text x="82" y="1375" font-size="13" fill="#33413a">preference endpoint probed first · if</text>
+<text x="82" y="1395" font-size="13" fill="#33413a">down: omit footer + link, keep sending</text>
+<rect x="80" y="1409" width="153" height="24" rx="7" fill="#fbf7ec"/>
+<text x="90" y="1426" font-size="11.5" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">fail-open by design</text>
+<rect x="540" y="1294" width="440" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="540" y="1294" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="562" y="1324" font-size="16" font-weight="700" fill="#16232e">Branded HTML Compose</text>
+<text x="562" y="1344" font-size="12.5" fill="#5c6b60">shared template system</text>
+<text x="562" y="1375" font-size="13" fill="#33413a">inline logo assets · per-topic sections</text>
+<text x="562" y="1395" font-size="13" fill="#33413a">footer carries preference deep link</text>
+<rect x="560" y="1409" width="174" height="24" rx="7" fill="#eef2e4"/>
+<text x="570" y="1426" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">email-client-safe HTML</text>
+<rect x="1020" y="1294" width="470" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1020" y="1294" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="1042" y="1324" font-size="16" font-weight="700" fill="#16232e">SendGrid Dispatch</text>
+<text x="1042" y="1344" font-size="12.5" fill="#5c6b60">POST /v3/mail/send</text>
+<text x="1042" y="1375" font-size="13" fill="#33413a">per-recipient payloads · only HTTP 202</text>
+<text x="1042" y="1395" font-size="13" fill="#33413a">counts as accepted · non-202 logged as failure</text>
+<rect x="1040" y="1409" width="188" height="24" rx="7" fill="#eef0f3"/>
+<text x="1050" y="1426" font-size="11.5" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">delivery report → runner</text>
+<polyline points="1255,1200 1255,1240 280,1240 280,1294" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="500,1380 540,1380" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="980,1380 1020,1380" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="60" y="1506" width="700" height="104" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="1506" width="6" height="104" rx="3" fill="#1b2733"/>
+<text x="82" y="1536" font-size="15" font-weight="700" fill="#16232e">Persist Sent-Article History</text>
+<text x="82" y="1556" font-size="12.5" fill="#5c6b60">sent_articles.json → GCS</text>
+<text x="82" y="1587" font-size="13" fill="#33413a">prevents repeats across runs · loaded at next start</text>
+<polyline points="1255,1466 1255,1558 760,1558" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<circle cx="880" cy="1558" r="11" fill="none" stroke="#1b2733" stroke-width="2.5"/>
+<circle cx="880" cy="1558" r="5.5" fill="#1b2733"/>
+<text x="880" y="1592" text-anchor="middle" font-size="12.5" letter-spacing="2" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">SENT</text>
+</svg>

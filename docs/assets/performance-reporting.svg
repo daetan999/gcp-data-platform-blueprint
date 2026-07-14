@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 1120" font-family="IBM Plex Sans, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2733"/></marker><marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2e5d43"/></marker><marker id="arra" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a4a12"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a33a2a"/></marker></defs>
+<rect x="0" y="0" width="1560" height="1120" rx="18" fill="#f2f5ea" stroke="#d8dfcd"/>
+<text x="44" y="52" font-size="15" letter-spacing="4" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">CADENCE · PROPERTY PERFORMANCE REPORTING</text>
+<text x="1516" y="52" text-anchor="end" font-size="13" fill="#8a958b" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">SCHEDULE → CALCULATE → NARRATE → DELIVER</text>
+<rect x="40" y="84" width="1480" height="216" rx="14" fill="none" stroke="#5c6b60" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="58" y="111" font-size="12.5" letter-spacing="3" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">TRIGGER + RUNTIME</text>
+<circle cx="100" cy="192" r="11" fill="#1b2733" stroke="#1b2733" stroke-width="2.5"/>
+<text x="100" y="226" text-anchor="middle" font-size="12.5" letter-spacing="2" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">CRON</text>
+<rect x="150" y="116" width="400" height="152" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="150" y="116" width="6" height="152" rx="3" fill="#1b2733"/>
+<text x="172" y="146" font-size="16" font-weight="700" fill="#16232e">Cloud Scheduler</text>
+<text x="172" y="166" font-size="12.5" fill="#5c6b60">two cadences</text>
+<text x="172" y="197" font-size="13" fill="#33413a">weekly · Monday 09:00</text>
+<text x="172" y="217" font-size="13" fill="#33413a">monthly · 1st of month</text>
+<rect x="170" y="231" width="181" height="24" rx="7" fill="#fbf7ec"/>
+<text x="180" y="248" font-size="11.5" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">paused until activation</text>
+<rect x="590" y="116" width="420" height="152" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="590" y="116" width="6" height="152" rx="3" fill="#1b2733"/>
+<text x="612" y="146" font-size="16" font-weight="700" fill="#16232e">Cloud Run Runner</text>
+<text x="612" y="166" font-size="12.5" fill="#5c6b60">TARGET_SCRIPT selects report</text>
+<text x="612" y="197" font-size="13" fill="#33413a">weekly or monthly engine from one</text>
+<text x="612" y="217" font-size="13" fill="#33413a">runner image · helpers from GCS</text>
+<rect x="610" y="231" width="125" height="24" rx="7" fill="#eef0f3"/>
+<text x="620" y="248" font-size="11.5" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">PYTHONPATH=/tmp</text>
+<rect x="1050" y="116" width="440" height="152" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1050" y="116" width="6" height="152" rx="3" fill="#1b2733"/>
+<text x="1072" y="146" font-size="16" font-weight="700" fill="#16232e">Env + Secret Load</text>
+<text x="1072" y="166" font-size="12.5" fill="#5c6b60">all knobs env-driven</text>
+<text x="1072" y="197" font-size="13" fill="#33413a">bucket · BQ project · mail secret id</text>
+<text x="1072" y="217" font-size="13" fill="#33413a">narrative model + region — no redeploys</text>
+<rect x="1070" y="231" width="132" height="24" rx="7" fill="#eef2e4"/>
+<text x="1080" y="248" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">12-factor config</text>
+<polyline points="550,192 590,192" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="1010,192 1050,192" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="40" y="322" width="1480" height="420" rx="14" fill="none" stroke="#2e5d43" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="58" y="349" font-size="12.5" letter-spacing="3" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">METRICS ENGINE · BIGQUERY LAKEHOUSE</text>
+<rect x="60" y="366" width="440" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="366" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="82" y="396" font-size="16" font-weight="700" fill="#16232e">Scope Resolution</text>
+<text x="82" y="416" font-size="12.5" fill="#5c6b60">email_recipient_mapping</text>
+<text x="82" y="447" font-size="13" fill="#33413a">recipients + property assignments</text>
+<text x="82" y="467" font-size="13" fill="#33413a">send_mode · property_code per GM</text>
+<rect x="80" y="481" width="181" height="24" rx="7" fill="#eef0f3"/>
+<text x="90" y="498" font-size="11.5" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">test / production lanes</text>
+<rect x="540" y="366" width="440" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="540" y="366" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="562" y="396" font-size="16" font-weight="700" fill="#16232e">Reservations Base</text>
+<text x="562" y="416" font-size="12.5" fill="#5c6b60">operations_gold view</text>
+<text x="562" y="447" font-size="13" fill="#33413a">DISTINCT rows → stay-night explosion</text>
+<text x="562" y="467" font-size="13" fill="#33413a">date-pushdown before UNNEST</text>
+<rect x="560" y="481" width="111" height="24" rx="7" fill="#eef2e4"/>
+<text x="570" y="498" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">scan-safe SQL</text>
+<rect x="1020" y="366" width="470" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1020" y="366" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="1042" y="396" font-size="16" font-weight="700" fill="#16232e">Room Availability (AAN)</text>
+<text x="1042" y="416" font-size="12.5" fill="#5c6b60">3 PMS inventory tables unioned</text>
+<text x="1042" y="447" font-size="13" fill="#33413a">last-known AAN carried forward ≤ 30</text>
+<text x="1042" y="467" font-size="13" fill="#33413a">days for missing nights per property</text>
+<rect x="1040" y="481" width="195" height="24" rx="7" fill="#eef0f3"/>
+<text x="1050" y="498" font-size="11.5" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">per-source columns mapped</text>
+<polyline points="500,452 540,452" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="980,452 1020,452" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="540" y="580" width="950" height="132" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="540" y="580" width="6" height="132" rx="3" fill="#1b2733"/>
+<text x="562" y="610" font-size="16" font-weight="700" fill="#16232e">KPI Computation</text>
+<text x="562" y="630" font-size="12.5" fill="#5c6b60">deterministic — no model in the math</text>
+<text x="562" y="661" font-size="13" fill="#33413a">occupancy · ADR · RevPAR · pickup · budget variance · dual currency (local + group)</text>
+<rect x="560" y="675" width="223" height="24" rx="7" fill="#eef2e4"/>
+<text x="570" y="692" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">SAFE_DIVIDE on raw components</text>
+<rect x="793" y="675" width="146" height="24" rx="7" fill="#fbf7ec"/>
+<text x="803" y="692" font-size="11.5" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">rates never summed</text>
+<rect x="949" y="675" width="293" height="24" rx="7" fill="#fdf1ef"/>
+<text x="959" y="692" font-size="11.5" fill="#a33a2a" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">&gt;100% occupancy ⇒ flagged, not reported</text>
+<polyline points="1255,538 1255,580" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="280,538 280,646 540,646" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="40" y="764" width="1480" height="300" rx="14" fill="none" stroke="#1b2733" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="58" y="791" font-size="12.5" letter-spacing="3" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">NARRATIVE + DELIVERY</text>
+<rect x="60" y="808" width="440" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="60" y="808" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="82" y="838" font-size="16" font-weight="700" fill="#16232e">Gemini Narrative</text>
+<text x="82" y="858" font-size="12.5" fill="#5c6b60">grounded in computed metrics</text>
+<text x="82" y="889" font-size="13" fill="#33413a">model + region from env · numbers come</text>
+<text x="82" y="909" font-size="13" fill="#33413a">from SQL, never from the model</text>
+<rect x="80" y="923" width="181" height="24" rx="7" fill="#eef2e4"/>
+<text x="90" y="940" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">metrics-grounded prompt</text>
+<rect x="540" y="808" width="440" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="540" y="808" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="562" y="838" font-size="16" font-weight="700" fill="#16232e">Branded HTML Report</text>
+<text x="562" y="858" font-size="12.5" fill="#5c6b60">per-property composition</text>
+<text x="562" y="889" font-size="13" fill="#33413a">KPI tables · BI deep link · inline logos</text>
+<rect x="560" y="903" width="139" height="24" rx="7" fill="#eef2e4"/>
+<text x="570" y="920" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">email-client-safe</text>
+<rect x="1020" y="808" width="470" height="172" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
+<rect x="1020" y="808" width="6" height="172" rx="3" fill="#1b2733"/>
+<text x="1042" y="838" font-size="16" font-weight="700" fill="#16232e">SendGrid Dispatch</text>
+<text x="1042" y="858" font-size="12.5" fill="#5c6b60">one payload per property recipient</text>
+<text x="1042" y="889" font-size="13" fill="#33413a">HTTP 202 = accepted · anything else is</text>
+<text x="1042" y="909" font-size="13" fill="#33413a">a hard failure in the run report</text>
+<rect x="1040" y="923" width="146" height="24" rx="7" fill="#fdf1ef"/>
+<text x="1050" y="940" font-size="11.5" fill="#a33a2a" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">hard-fail contract</text>
+<polyline points="700,712 700,770 280,770 280,808" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="437.0" y="748.0" width="106" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="490.0" y="762.0" text-anchor="middle" font-size="12" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">computed KPIs</text>
+<polyline points="500,894 540,894" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="482.0" y="872.0" width="76" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<text x="520.0" y="886.0" text-anchor="middle" font-size="12" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">narrative</text>
+<polyline points="980,894 1020,894" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+<circle cx="1255" cy="1030" r="11" fill="none" stroke="#1b2733" stroke-width="2.5"/>
+<circle cx="1255" cy="1030" r="5.5" fill="#1b2733"/>
+<text x="1255" y="1064" text-anchor="middle" font-size="12.5" letter-spacing="2" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">RUN REPORT</text>
+<polyline points="1255,980 1255,1012" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
+</svg>
