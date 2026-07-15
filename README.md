@@ -7,6 +7,10 @@
 [![Python](https://img.shields.io/badge/python-3.13-blue)](#)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](#)
 
+> **Portfolio** · [AI-infrastructure solutions-engineering hub](https://github.com/daetan999/technical_resume) · [value-engineering playbook — TCO / ROI](https://github.com/daetan999/technical_resume/blob/main/docs/value-engineering.md)
+>
+> **Infra-buyer's-eye value:** serverless FinOps — pay-per-run runners, schedulers paused by default, no idle compute — paired with the no-public-IP private-VPC governance posture an enterprise security review demands before it will adopt anything.
+
 ---
 
 ## Executive Summary
