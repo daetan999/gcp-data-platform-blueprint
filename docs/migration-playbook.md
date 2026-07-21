@@ -1,6 +1,8 @@
 # Migration Playbook — Sandbox → UAT → Production
 
-The platform was migrated from a development sandbox project into dedicated UAT and production projects — nine services, three BigQuery tables, two buckets, and a certified recipient base — with **no automated deployment pipeline available in the target environment**. This document records the discipline that made a manual migration safe.
+> **Artifact boundary:** this is a sanitized operating case study. It records the controls and sequence used for a nine-service, three-table, two-bucket migration pattern, while excluding project IDs, recipients, credentials, deployment payloads, and other production configuration. It is not an executable migration from this public repository.
+
+The migration moved a development sandbox pattern into separate UAT and production environments with **no automated deployment pipeline available in the target environment**. This document records the discipline used to reduce risk during that manual promotion.
 
 ## Operating model
 
