@@ -1,12 +1,6 @@
-# Enterprise GCP Data & Intelligence Platform — Architectural Blueprint
+# GCP Data & Intelligence Platform — Architectural Blueprint
 
-[![GCP](https://img.shields.io/badge/Google%20Cloud-serverless-4285F4)](#)
-[![BigQuery](https://img.shields.io/badge/BigQuery-lakehouse-669DF6)](#)
-[![Cloud Run](https://img.shields.io/badge/Cloud%20Run-9%20services-34A853)](#)
-[![Gemini](https://img.shields.io/badge/Gemini-guarded%20pipelines-8E75B2)](#)
-[![Python](https://img.shields.io/badge/python-3.13-blue)](#)
-
-> Part of the [technical project portfolio](https://github.com/daetan999/technical_resume). Supporting material: [value-engineering playbook](https://github.com/daetan999/technical_resume/blob/main/docs/value-engineering.md).
+[Architecture](docs/architecture.md) · [Migration playbook](docs/migration-playbook.md) · [Portfolio](https://github.com/daetan999/technical_resume)
 
 ## Overview
 
@@ -16,6 +10,23 @@ This repository is a sanitized blueprint of an enterprise Google Cloud data plat
 - **Performance reporting:** weekly and monthly property reports with deterministic BigQuery calculations and model-generated narrative restricted to computed figures.
 
 The public repository focuses on infrastructure, service boundaries, reliability controls, deployment procedures, SQL operation shapes, and operating documentation. It does not contain production source code, recipients, credentials, or proprietary integrations.
+
+## Portfolio Role
+
+This repository forms the governed-cloud foundation of the [Enterprise AI Infrastructure Portfolio](https://github.com/daetan999/technical_resume). It shows how data movement, warehouse controls, serverless execution, model boundaries, secrets, and reversible operations shape an enterprise AI platform before application and commercial decisions are made.
+
+## Published Artifact Status
+
+This is a **sanitized architectural blueprint**, not a deployable production environment.
+
+| Available here | Deliberately excluded |
+|---|---|
+| Service contracts and failure-handling patterns | Proprietary transformations and prompts |
+| Synthetic BigQuery DDL, operations, and seed shapes | Live datasets, recipients, and identifiers |
+| Deterministic KPI and preference-flow structures | Complete provider integrations and credentials |
+| Architecture and migration operating documentation | Infrastructure-as-code and a runnable cloud account |
+
+The workflows below describe the represented design. Methods explicitly marked as blueprint stubs document an omitted integration boundary rather than runnable behavior.
 
 ## Public-Portfolio Boundary
 
@@ -45,13 +56,13 @@ The design combines:
 ![AI newsletter workflow](docs/assets/newsletter-pipeline.svg)
 
 1. Cloud Scheduler invokes a Cloud Run runner using authenticated requests.
-2. The runner loads approved scripts and shared helpers from Cloud Storage.
-3. RSS sources pass through retry, backoff, response classification, and feed-health reporting.
-4. Gemini screens, ranks, and summarizes candidate articles.
+2. The runner contract loads approved scripts and shared helpers from Cloud Storage.
+3. The ingestion policy defines retry, backoff, response classification, and feed-health outcomes.
+4. Gemini is constrained to screening, ranking, and summarizing candidate articles.
 5. A deterministic validator checks dates and year references before delivery.
-6. BigQuery resolves active recipients and exclusions.
-7. SendGrid HTTP 202 is treated as the delivery-acceptance signal.
-8. Sent-history state is persisted only after a ready newsletter and accepted delivery.
+6. BigQuery-backed rules resolve active recipients and exclusions.
+7. The delivery contract treats SendGrid HTTP 202 as acceptance.
+8. Sent-history state advances only after a ready newsletter and accepted delivery.
 
 ## Preference and Unsubscribe Flow
 
@@ -134,6 +145,35 @@ sql/seeds/                     Synthetic illustrative records
 
 Potential extensions are documented separately from the implemented blueprint, including reviewed self-service signup, richer monitoring, deployment automation, and expanded catalog-driven topic registration.
 
+## Repository Verification
+
+The published source and diagrams can be checked without a Google Cloud account:
+
+```bash
+python -m compileall services
+python - <<'PY'
+from pathlib import Path
+import xml.etree.ElementTree as ET
+
+for diagram in Path("docs/assets").glob("*.svg"):
+    ET.parse(diagram)
+print("Python syntax and SVG assets verified")
+PY
+```
+
+These are artifact checks only. End-to-end verification requires configured Cloud Run, BigQuery, Cloud Storage, Scheduler, Gemini, SendGrid, IAM, and Secret Manager resources that are not published here.
+
+## Limitations
+
+- Integration methods labelled as blueprint stubs do not execute in the public tree.
+- The SQL examples use synthetic identifiers and require environment-specific review before use.
+- Architecture diagrams communicate service responsibilities, not proof of a live deployment.
+- Production use requires infrastructure-as-code, identity design, data-governance review, observability, and recovery testing.
+
 ## License
 
 Released under the MIT License.
+
+---
+
+[Part of the Enterprise AI Infrastructure Portfolio](https://github.com/daetan999/technical_resume)
