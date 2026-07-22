@@ -78,12 +78,12 @@
 <text x="1045.0" y="678.0" text-anchor="middle" font-size="12" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">MERGE</text>
 <rect x="1080" y="140" width="420" height="132" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
 <rect x="1080" y="140" width="6" height="132" rx="3" fill="#8a4a12"/>
-<text x="1102" y="170" font-size="16" font-weight="700" fill="#16232e">Fail-Open Contract</text>
+<text x="1102" y="170" font-size="16" font-weight="700" fill="#16232e">Link Availability Contract</text>
 <text x="1102" y="190" font-size="12.5" fill="#5c6b60">design note</text>
-<text x="1102" y="221" font-size="13" fill="#33413a">if this API is down, sends continue</text>
-<text x="1102" y="241" font-size="13" fill="#33413a">without footers — never blocked</text>
-<rect x="1100" y="255" width="195" height="24" rx="7" fill="#fbf7ec"/>
-<text x="1110" y="272" font-size="11.5" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">availability over feature</text>
+<text x="1102" y="221" font-size="13" fill="#33413a">link minting may degrade if API is down</text>
+<text x="1102" y="241" font-size="13" fill="#33413a">stored opt-outs remain authoritative</text>
+<rect x="1100" y="255" width="230" height="24" rx="7" fill="#fbf7ec"/>
+<text x="1110" y="272" font-size="11.5" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">unsubscribe lookup fails closed</text>
 <rect x="60" y="796" width="420" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
 <rect x="60" y="796" width="6" height="112" rx="3" fill="#1b2733"/>
 <text x="82" y="826" font-size="16" font-weight="700" fill="#16232e">Success Page</text>

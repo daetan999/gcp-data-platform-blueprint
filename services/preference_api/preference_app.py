@@ -1,8 +1,8 @@
 """Preference (unsubscribe) API — illustrative blueprint skeleton.
 
 Contract: GET is idempotent and writes nothing; only an explicit POST mutates.
-The send path treats this whole service as optional (fail-open) — see
-docs/architecture.md, "Reliability contracts".
+Preference-link and footer minting may degrade when this service is unavailable.
+Already stored opt-outs remain authoritative and their lookup is fail-closed.
 """
 from __future__ import annotations
 

@@ -16,6 +16,24 @@ UNSUBSCRIBE_BQ_TABLE = os.getenv("UNSUBSCRIBE_BQ_TABLE", "<PROJECT_ID>.email_con
 NEWSLETTER_TYPE_CATALOG_BQ_TABLE = os.getenv("NEWSLETTER_TYPE_CATALOG_BQ_TABLE", "")
 
 
+class UnsubscribeLookupError(RuntimeError):
+    """Raised when recipient preferences cannot be resolved safely."""
+
+
+def _normalize_email(value: str) -> str:
+    """Return the canonical form used by the illustrative SQL contract."""
+    return value.strip().lower()
+
+
+def _lookup_unsubscribed_emails(newsletter_type: str) -> set[str]:
+    """Load topic-level and global opt-outs from BigQuery.
+
+    The public blueprint omits the BigQuery client and parameterized query.
+    Deployments must implement this boundary and let failures propagate.
+    """
+    raise NotImplementedError("Blueprint stub: BigQuery unsubscribe query omitted")
+
+
 def validate_unsubscribe_type_from_catalog(newsletter_type: str) -> None:
     """Best-effort catalog check — WARNING-ONLY AND FAIL-OPEN by design.
 
@@ -37,7 +55,35 @@ def get_newsletter_recipients(newsletter_type: str, send_mode: str = "production
 
 
 def filter_unsubscribed(recipients: list[str], newsletter_type: str) -> list[str]:
-    """Direct match against the unsubscribe table (type or 'all').
-    Fail-open: on lookup failure, warn and return the input list — a
-    preference-subsystem problem must never block operational sends."""
-    raise NotImplementedError("Blueprint stub")
+    """Return a normalized, deduplicated audience with opt-outs removed.
+
+    Fail closed: an unsubscribe lookup or result-shape failure raises
+    ``UnsubscribeLookupError``. The caller must stop delivery rather than
+    return the unfiltered audience.
+    """
+    normalized_type = newsletter_type.strip()
+    if not normalized_type:
+        raise ValueError("newsletter_type must not be blank")
+
+    try:
+        unsubscribed: set[str] = set()
+        for email in _lookup_unsubscribed_emails(normalized_type):
+            normalized_email = _normalize_email(email)
+            if normalized_email:
+                unsubscribed.add(normalized_email)
+    except Exception as exc:
+        raise UnsubscribeLookupError(
+            f"Unable to enforce unsubscribe preferences for {normalized_type!r}"
+        ) from exc
+
+    filtered: list[str] = []
+    seen: set[str] = set()
+    for email in recipients:
+        normalized_email = _normalize_email(email)
+        if not normalized_email or normalized_email in seen:
+            continue
+        seen.add(normalized_email)
+        if normalized_email not in unsubscribed:
+            filtered.append(normalized_email)
+
+    return filtered
