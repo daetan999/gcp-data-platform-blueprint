@@ -1,0 +1,281 @@
+# Instincts generated from https://github.com/daetan999/gcp-data-platform-blueprint
+# Generated: 2026-07-22T03:34:53.253Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: gcp-data-platform-blueprint-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: fix
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: fix: fail closed on unsubscribe lookup errors
+
+---
+id: gcp-data-platform-blueprint-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Commit Length
+
+## Action
+
+Keep commit messages concise (~45 characters)
+
+## Evidence
+
+- Average commit message length: 45 chars
+- Based on 1 commits
+
+---
+id: gcp-data-platform-blueprint-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: gcp-data-platform-blueprint-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: gcp-data-platform-blueprint-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: gcp-data-platform-blueprint-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: gcp-data-platform-blueprint-instinct-file-naming
+trigger: "When creating a new Python file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Instinct File Naming
+
+## Action
+
+Name the file using snake_case
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: gcp-data-platform-blueprint-instinct-function-naming
+trigger: "When defining a new Python function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: gcp-data-platform-blueprint-instinct-class-naming
+trigger: "When defining a new Python class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: gcp-data-platform-blueprint-instinct-constant-naming
+trigger: "When defining a constant in Python"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: gcp-data-platform-blueprint-instinct-import-style
+trigger: "When importing modules in Python"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: gcp-data-platform-blueprint-instinct-export-style
+trigger: "When exporting functions or classes in Python"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: gcp-data-platform-blueprint-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Instinct Test Location
+
+## Action
+
+Place test files in the separate 'tests' folder
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+- Common folder: tests
+
+---
+id: gcp-data-platform-blueprint-instinct-commit-format
+trigger: "When making a git commit"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: daetan999/gcp-data-platform-blueprint
+---
+
+# Gcp Data Platform Blueprint Instinct Commit Format
+
+## Action
+
+Use the conventional commit format with a 'fix:' prefix for bug fixes
+
+## Evidence
+
+- Pattern in commits.prefixes
+- Example: 'fix: fail closed on unsubscribe lookup errors'
+
