@@ -72,6 +72,7 @@ The design combines:
 - GET renders a confirmation page without changing data.
 - POST revalidates the token and performs an idempotent BigQuery `MERGE`.
 - Preference-link generation is fail-open so a preference-service outage does not block operational delivery.
+- Stored opt-outs are authoritative; an unsubscribe-table lookup failure stops delivery rather than falling back to the full audience.
 - Recipient lookup, delivery failure, and sent-history persistence remain hard-fail conditions.
 
 ## Performance Reporting Workflow
@@ -95,7 +96,7 @@ Controls include:
 |---|---|
 | Pay only when workloads run | Cloud Run services scale to zero and Scheduler controls each cadence independently. |
 | Treat configuration as data | Newsletter types, recipients, modes, and activation state are managed through guarded BigQuery operations. |
-| Separate recoverable and blocking failures | Preference and footer issues degrade safely; missing recipients, stale data, delivery failures, and subprocess errors fail the run. |
+| Separate recoverable and blocking failures | Link and footer minting may degrade; recipient or unsubscribe lookup, stale data, delivery, and subprocess failures stop the run. |
 | Restrict model responsibility | LLMs curate and narrate; deterministic code validates dates and calculates business metrics. |
 | Keep migrations reversible | Sandbox, UAT, and production promotion use paused schedulers, disabled-send dry runs, validation checks, and rollback steps. |
 | Keep secrets out of artifacts | Credentials remain in Secret Manager and environment configuration. |

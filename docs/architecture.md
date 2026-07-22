@@ -46,7 +46,7 @@ The operational configuration dataset is `email_config`:
 
 Design decisions worth stealing:
 
-- **The catalog is fail-open.** The send path checks a topic against the catalog and warns on any failure (missing env var, missing table, failed query, uncatalogued type) — but never blocks the send. The authoritative unsubscribe filter matches the unsubscribe table directly.
+- **Catalog validation is advisory; opt-out enforcement is authoritative.** A catalog check may warn and continue, but an unsubscribe-table lookup failure stops delivery. The send path never substitutes the unfiltered audience.
 - **Recipient identity is data, not code.** Test lanes vs production lanes are `send_mode` values; property assignments are `property_code` values. Activating a stakeholder is an `UPDATE`, not a deploy.
 - **Seeds are one-shot by construction.** The production seed opens with a BigQuery scripting `ASSERT` that aborts if the table is non-empty — reruns cannot double-insert.
 
@@ -61,8 +61,8 @@ Available-room-nights come from three PMS-specific inventory tables with differe
 | Concern | Contract |
 |---|---|
 | RSS source failure | Retry with backoff on 429/5xx; classify one of 8 outcome statuses; per-source health in the run log; a failed source never kills the run |
-| Preference API down | Fail-open: omit footer + link, keep sending |
-| Unsubscribe filter failure | Fail-open with warning (send-to-all fallback documented and deliberate) |
+| Preference API down | Link and footer minting may be omitted; stored preferences still apply |
+| Unsubscribe filter failure | Hard failure; never fall back to the unfiltered audience |
 | Recipient lookup failure | Hard failure — surfaced in the runner response |
 | SendGrid non-202 | Hard failure per recipient, aggregated in the delivery report |
 | Sent-history load/save failure | Hard failure — duplicate-prevention is not optional |

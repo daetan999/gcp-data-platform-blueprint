@@ -87,8 +87,8 @@ def build_briefing(selected: list[dict]) -> list[dict]:
 
 def main() -> dict:
     """Run contract: returns a structured delivery report to the runner.
-    Fail-open: unsubscribe filtering, footer minting. Hard-fail: recipient
-    lookup, non-202 delivery, sent-history persistence."""
+    Fail-open: preference-link and footer minting. Hard-fail: recipient or
+    unsubscribe lookup, non-202 delivery, sent-history persistence."""
     raise NotImplementedError("Blueprint stub — see docs/architecture.md")
 
 
