@@ -1,5 +1,16 @@
 # GCP Data & Intelligence Platform — Architectural Blueprint
 
+[![CI](https://github.com/daetan999/gcp-data-platform-blueprint/actions/workflows/ci.yml/badge.svg?style=flat-square)](https://github.com/daetan999/gcp-data-platform-blueprint/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-6B2D5C?style=flat-square&labelColor=150D16)](LICENSE)
+[![Compute: Cloud Run](https://img.shields.io/badge/compute-cloud%20run-33202C?style=flat-square&labelColor=150D16)](services/runner/main.py)
+[![Warehouse: BigQuery](https://img.shields.io/badge/warehouse-bigquery-33202C?style=flat-square&labelColor=150D16)](sql/tables)
+[![Model: Gemini on Vertex AI](https://img.shields.io/badge/model-gemini%20on%20vertex%20ai-33202C?style=flat-square&labelColor=150D16)](#technology-stack)
+[![Delivery: SendGrid](https://img.shields.io/badge/delivery-sendgrid-33202C?style=flat-square&labelColor=150D16)](services/newsletter_engine)
+[![Secrets: Secret Manager](https://img.shields.io/badge/secrets-secret%20manager-33202C?style=flat-square&labelColor=150D16)](#technology-stack)
+[![Artifact: sanitized blueprint](https://img.shields.io/badge/artifact-sanitized%20blueprint-6E5867?style=flat-square&labelColor=150D16)](#published-artifact-status)
+[![Data: synthetic](https://img.shields.io/badge/data-synthetic-6E5867?style=flat-square&labelColor=150D16)](#public-portfolio-boundary)
+[![Portfolio](https://img.shields.io/badge/portfolio-technical__resume-6E5867?style=flat-square&labelColor=150D16)](https://github.com/daetan999/technical_resume)
+
 [Architecture](docs/architecture.md) · [Migration playbook](docs/migration-playbook.md) · [Portfolio](https://github.com/daetan999/technical_resume)
 
 ## Overview

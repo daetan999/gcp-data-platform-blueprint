@@ -1,95 +1,95 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 990" font-family="IBM Plex Sans, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2733"/></marker><marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2e5d43"/></marker><marker id="arra" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a4a12"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a33a2a"/></marker></defs>
-<rect x="0" y="0" width="1560" height="990" rx="18" fill="#f2f5ea" stroke="#d8dfcd"/>
-<text x="44" y="52" font-size="15" letter-spacing="4" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">PREFERENCE API · UNSUBSCRIBE WORKFLOW</text>
-<text x="1516" y="52" text-anchor="end" font-size="13" fill="#8a958b" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">TOKEN → CONFIRM → MERGE → DONE</text>
-<rect x="40" y="84" width="460" height="856" rx="14" fill="none" stroke="#5c6b60" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
-<text x="58" y="111" font-size="12.5" letter-spacing="3" fill="#5c6b60" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">RECIPIENT · BROWSER</text>
-<rect x="530" y="84" width="500" height="856" rx="14" fill="none" stroke="#2e5d43" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
-<text x="548" y="111" font-size="12.5" letter-spacing="3" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">PREFERENCE API · CLOUD RUN</text>
-<rect x="1060" y="84" width="460" height="856" rx="14" fill="none" stroke="#1b2733" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
-<text x="1078" y="111" font-size="12.5" letter-spacing="3" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">BIGQUERY · email_config</text>
-<rect x="60" y="140" width="420" height="132" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
-<rect x="60" y="140" width="6" height="132" rx="3" fill="#1b2733"/>
-<text x="82" y="170" font-size="16" font-weight="700" fill="#16232e">Click Unsubscribe Link</text>
-<text x="82" y="190" font-size="12.5" fill="#5c6b60">from any newsletter footer</text>
-<text x="82" y="221" font-size="13" fill="#33413a">GET /preferences/:token</text>
-<rect x="80" y="235" width="153" height="24" rx="7" fill="#eef0f3"/>
-<text x="90" y="252" font-size="11.5" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">Fernet token in URL</text>
-<rect x="550" y="140" width="460" height="132" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
-<rect x="550" y="140" width="6" height="132" rx="3" fill="#1b2733"/>
-<text x="572" y="170" font-size="16" font-weight="700" fill="#16232e">Decode + Verify Token</text>
-<text x="572" y="190" font-size="12.5" fill="#5c6b60">Fernet symmetric decrypt</text>
-<text x="572" y="221" font-size="13" fill="#33413a">recovers email + newsletter type</text>
-<rect x="570" y="235" width="167" height="24" rx="7" fill="#eef2e4"/>
-<text x="580" y="252" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">key in Secret Manager</text>
-<polyline points="480,206 550,206" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
-<rect x="499.0" y="184.0" width="32" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
-<text x="515.0" y="198.0" text-anchor="middle" font-size="12" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">GET</text>
-<polygon points="780,302 890,350 780,398 670,350" fill="#fbf7ec" stroke="#8a4a12" stroke-width="1.6"/>
-<text x="780" y="348" text-anchor="middle" font-size="12.5" font-weight="600" fill="#8a4a12">token</text>
-<text x="780" y="364" text-anchor="middle" font-size="12.5" font-weight="600" fill="#8a4a12">valid?</text>
-<polyline points="780,272 780,302" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
-<rect x="550" y="448" width="460" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
-<rect x="550" y="448" width="6" height="112" rx="3" fill="#1b2733"/>
-<text x="572" y="478" font-size="16" font-weight="700" fill="#16232e">Render Confirmation Page</text>
-<text x="572" y="498" font-size="12.5" fill="#5c6b60">no state change on GET</text>
-<rect x="570" y="523" width="216" height="24" rx="7" fill="#eef2e4"/>
-<text x="580" y="540" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">idempotent · safe to preview</text>
-<polyline points="780,398 780,448" fill="none" stroke="#2e5d43" stroke-width="2" marker-end="url(#arrg)"/>
-<rect x="764.0" y="401.0" width="32" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
-<text x="780.0" y="415.0" text-anchor="middle" font-size="12" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">yes</text>
-<rect x="60" y="448" width="420" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
-<rect x="60" y="448" width="6" height="112" rx="3" fill="#1b2733"/>
-<text x="82" y="478" font-size="16" font-weight="700" fill="#16232e">Error Page</text>
-<text x="82" y="498" font-size="12.5" fill="#5c6b60">invalid / expired token</text>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f1420"/></marker><marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b2d5c"/></marker><marker id="arra" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9a3a6b"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a33a2a"/></marker></defs>
+<rect x="0" y="0" width="1560" height="990" rx="18" fill="#f7eff5" stroke="#e4d3df"/>
+<text x="44" y="52" font-size="15" letter-spacing="4" fill="#6e5867" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">PREFERENCE API · UNSUBSCRIBE WORKFLOW</text>
+<text x="1516" y="52" text-anchor="end" font-size="13" fill="#96828f" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">TOKEN → CONFIRM → MERGE → DONE</text>
+<rect x="40" y="84" width="460" height="856" rx="14" fill="none" stroke="#6e5867" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="58" y="111" font-size="12.5" letter-spacing="3" fill="#6e5867" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">RECIPIENT · BROWSER</text>
+<rect x="530" y="84" width="500" height="856" rx="14" fill="none" stroke="#6b2d5c" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="548" y="111" font-size="12.5" letter-spacing="3" fill="#6b2d5c" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">PREFERENCE API · CLOUD RUN</text>
+<rect x="1060" y="84" width="460" height="856" rx="14" fill="none" stroke="#1f1420" stroke-width="1.4" opacity="0.55" stroke-dasharray="7 5"/>
+<text x="1078" y="111" font-size="12.5" letter-spacing="3" fill="#1f1420" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-weight="600">BIGQUERY · email_config</text>
+<rect x="60" y="140" width="420" height="132" rx="14" fill="#ffffff" stroke="#e4d3df"/>
+<rect x="60" y="140" width="6" height="132" rx="3" fill="#1f1420"/>
+<text x="82" y="170" font-size="16" font-weight="700" fill="#150d16">Click Unsubscribe Link</text>
+<text x="82" y="190" font-size="12.5" fill="#6e5867">from any newsletter footer</text>
+<text x="82" y="221" font-size="13" fill="#33202c">GET /preferences/:token</text>
+<rect x="80" y="235" width="153" height="24" rx="7" fill="#f0ecef"/>
+<text x="90" y="252" font-size="11.5" fill="#1f1420" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">Fernet token in URL</text>
+<rect x="550" y="140" width="460" height="132" rx="14" fill="#ffffff" stroke="#e4d3df"/>
+<rect x="550" y="140" width="6" height="132" rx="3" fill="#1f1420"/>
+<text x="572" y="170" font-size="16" font-weight="700" fill="#150d16">Decode + Verify Token</text>
+<text x="572" y="190" font-size="12.5" fill="#6e5867">Fernet symmetric decrypt</text>
+<text x="572" y="221" font-size="13" fill="#33202c">recovers email + newsletter type</text>
+<rect x="570" y="235" width="167" height="24" rx="7" fill="#f5ecf2"/>
+<text x="580" y="252" font-size="11.5" fill="#6b2d5c" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">key in Secret Manager</text>
+<polyline points="480,206 550,206" fill="none" stroke="#1f1420" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="499.0" y="184.0" width="32" height="20" rx="4" fill="#f7eff5" opacity="0.92"/>
+<text x="515.0" y="198.0" text-anchor="middle" font-size="12" fill="#1f1420" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">GET</text>
+<polygon points="780,302 890,350 780,398 670,350" fill="#faf4f8" stroke="#9a3a6b" stroke-width="1.6"/>
+<text x="780" y="348" text-anchor="middle" font-size="12.5" font-weight="600" fill="#9a3a6b">token</text>
+<text x="780" y="364" text-anchor="middle" font-size="12.5" font-weight="600" fill="#9a3a6b">valid?</text>
+<polyline points="780,272 780,302" fill="none" stroke="#1f1420" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="550" y="448" width="460" height="112" rx="14" fill="#ffffff" stroke="#e4d3df"/>
+<rect x="550" y="448" width="6" height="112" rx="3" fill="#1f1420"/>
+<text x="572" y="478" font-size="16" font-weight="700" fill="#150d16">Render Confirmation Page</text>
+<text x="572" y="498" font-size="12.5" fill="#6e5867">no state change on GET</text>
+<rect x="570" y="523" width="216" height="24" rx="7" fill="#f5ecf2"/>
+<text x="580" y="540" font-size="11.5" fill="#6b2d5c" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">idempotent · safe to preview</text>
+<polyline points="780,398 780,448" fill="none" stroke="#6b2d5c" stroke-width="2" marker-end="url(#arrg)"/>
+<rect x="764.0" y="401.0" width="32" height="20" rx="4" fill="#f7eff5" opacity="0.92"/>
+<text x="780.0" y="415.0" text-anchor="middle" font-size="12" fill="#6b2d5c" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">yes</text>
+<rect x="60" y="448" width="420" height="112" rx="14" fill="#ffffff" stroke="#e4d3df"/>
+<rect x="60" y="448" width="6" height="112" rx="3" fill="#1f1420"/>
+<text x="82" y="478" font-size="16" font-weight="700" fill="#150d16">Error Page</text>
+<text x="82" y="498" font-size="12.5" fill="#6e5867">invalid / expired token</text>
 <rect x="80" y="523" width="125" height="24" rx="7" fill="#fdf1ef"/>
 <text x="90" y="540" font-size="11.5" fill="#a33a2a" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">no data written</text>
 <polyline points="670,350 280,350 280,448" fill="none" stroke="#a33a2a" stroke-width="2" marker-end="url(#arrr)"/>
-<rect x="424.0" y="328.0" width="24" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
+<rect x="424.0" y="328.0" width="24" height="20" rx="4" fill="#f7eff5" opacity="0.92"/>
 <text x="436.0" y="342.0" text-anchor="middle" font-size="12" fill="#a33a2a" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">no</text>
-<rect x="60" y="620" width="420" height="132" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
-<rect x="60" y="620" width="6" height="132" rx="3" fill="#1b2733"/>
-<text x="82" y="650" font-size="16" font-weight="700" fill="#16232e">Confirm Unsubscribe</text>
-<text x="82" y="670" font-size="12.5" fill="#5c6b60">explicit second step</text>
-<text x="82" y="701" font-size="13" fill="#33413a">POST /preferences/:token</text>
-<rect x="80" y="715" width="139" height="24" rx="7" fill="#eef2e4"/>
-<text x="90" y="732" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">no one-click CSRF</text>
-<polyline points="550,504 515,504 515,590 280,590 280,620" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
-<rect x="550" y="620" width="460" height="132" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
-<rect x="550" y="620" width="6" height="132" rx="3" fill="#1b2733"/>
-<text x="572" y="650" font-size="16" font-weight="700" fill="#16232e">Re-Decode + Write</text>
-<text x="572" y="670" font-size="12.5" fill="#5c6b60">token decoded again on POST</text>
-<text x="572" y="701" font-size="13" fill="#33413a">MERGE upsert unsubscribe row</text>
-<rect x="570" y="715" width="174" height="24" rx="7" fill="#eef0f3"/>
-<text x="580" y="732" font-size="11.5" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">is_unsubscribed = TRUE</text>
-<polyline points="480,686 550,686" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
-<rect x="495.5" y="664.0" width="39" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
-<text x="515.0" y="678.0" text-anchor="middle" font-size="12" fill="#1b2733" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">POST</text>
-<rect x="1080" y="620" width="420" height="132" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
-<rect x="1080" y="620" width="6" height="132" rx="3" fill="#1b2733"/>
-<text x="1102" y="650" font-size="16" font-weight="700" fill="#16232e">newsletter_unsubscribe</text>
-<text x="1102" y="670" font-size="12.5" fill="#5c6b60">topic-level or 'all'</text>
-<text x="1102" y="701" font-size="13" fill="#33413a">read by every send run</text>
-<rect x="1100" y="715" width="146" height="24" rx="7" fill="#eef2e4"/>
-<text x="1110" y="732" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">MERGE · idempotent</text>
-<polyline points="1010,686 1080,686" fill="none" stroke="#2e5d43" stroke-width="2" marker-end="url(#arrg)"/>
-<rect x="1021.5" y="664.0" width="47" height="20" rx="4" fill="#f2f5ea" opacity="0.92"/>
-<text x="1045.0" y="678.0" text-anchor="middle" font-size="12" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">MERGE</text>
-<rect x="1080" y="140" width="420" height="132" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
-<rect x="1080" y="140" width="6" height="132" rx="3" fill="#8a4a12"/>
-<text x="1102" y="170" font-size="16" font-weight="700" fill="#16232e">Link Availability Contract</text>
-<text x="1102" y="190" font-size="12.5" fill="#5c6b60">design note</text>
-<text x="1102" y="221" font-size="13" fill="#33413a">link minting may degrade if API is down</text>
-<text x="1102" y="241" font-size="13" fill="#33413a">stored opt-outs remain authoritative</text>
-<rect x="1100" y="255" width="230" height="24" rx="7" fill="#fbf7ec"/>
-<text x="1110" y="272" font-size="11.5" fill="#8a4a12" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">unsubscribe lookup fails closed</text>
-<rect x="60" y="796" width="420" height="112" rx="14" fill="#ffffff" stroke="#d8dfcd"/>
-<rect x="60" y="796" width="6" height="112" rx="3" fill="#1b2733"/>
-<text x="82" y="826" font-size="16" font-weight="700" fill="#16232e">Success Page</text>
-<text x="82" y="846" font-size="12.5" fill="#5c6b60">unsubscribe confirmed</text>
-<rect x="80" y="871" width="216" height="24" rx="7" fill="#eef2e4"/>
-<text x="90" y="888" font-size="11.5" fill="#2e5d43" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">rendered after MERGE commits</text>
-<polyline points="780,752 780,852 480,852" fill="none" stroke="#1b2733" stroke-width="2" marker-end="url(#arr)"/>
-<text x="550" y="918" font-size="12" fill="#5c6b60">UAT gate: GET confirmation, POST mutation, BigQuery write and cleanup verified end-to-end before activation</text>
+<rect x="60" y="620" width="420" height="132" rx="14" fill="#ffffff" stroke="#e4d3df"/>
+<rect x="60" y="620" width="6" height="132" rx="3" fill="#1f1420"/>
+<text x="82" y="650" font-size="16" font-weight="700" fill="#150d16">Confirm Unsubscribe</text>
+<text x="82" y="670" font-size="12.5" fill="#6e5867">explicit second step</text>
+<text x="82" y="701" font-size="13" fill="#33202c">POST /preferences/:token</text>
+<rect x="80" y="715" width="139" height="24" rx="7" fill="#f5ecf2"/>
+<text x="90" y="732" font-size="11.5" fill="#6b2d5c" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">no one-click CSRF</text>
+<polyline points="550,504 515,504 515,590 280,590 280,620" fill="none" stroke="#1f1420" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="550" y="620" width="460" height="132" rx="14" fill="#ffffff" stroke="#e4d3df"/>
+<rect x="550" y="620" width="6" height="132" rx="3" fill="#1f1420"/>
+<text x="572" y="650" font-size="16" font-weight="700" fill="#150d16">Re-Decode + Write</text>
+<text x="572" y="670" font-size="12.5" fill="#6e5867">token decoded again on POST</text>
+<text x="572" y="701" font-size="13" fill="#33202c">MERGE upsert unsubscribe row</text>
+<rect x="570" y="715" width="174" height="24" rx="7" fill="#f0ecef"/>
+<text x="580" y="732" font-size="11.5" fill="#1f1420" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">is_unsubscribed = TRUE</text>
+<polyline points="480,686 550,686" fill="none" stroke="#1f1420" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="495.5" y="664.0" width="39" height="20" rx="4" fill="#f7eff5" opacity="0.92"/>
+<text x="515.0" y="678.0" text-anchor="middle" font-size="12" fill="#1f1420" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">POST</text>
+<rect x="1080" y="620" width="420" height="132" rx="14" fill="#ffffff" stroke="#e4d3df"/>
+<rect x="1080" y="620" width="6" height="132" rx="3" fill="#1f1420"/>
+<text x="1102" y="650" font-size="16" font-weight="700" fill="#150d16">newsletter_unsubscribe</text>
+<text x="1102" y="670" font-size="12.5" fill="#6e5867">topic-level or 'all'</text>
+<text x="1102" y="701" font-size="13" fill="#33202c">read by every send run</text>
+<rect x="1100" y="715" width="146" height="24" rx="7" fill="#f5ecf2"/>
+<text x="1110" y="732" font-size="11.5" fill="#6b2d5c" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">MERGE · idempotent</text>
+<polyline points="1010,686 1080,686" fill="none" stroke="#6b2d5c" stroke-width="2" marker-end="url(#arrg)"/>
+<rect x="1021.5" y="664.0" width="47" height="20" rx="4" fill="#f7eff5" opacity="0.92"/>
+<text x="1045.0" y="678.0" text-anchor="middle" font-size="12" fill="#6b2d5c" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">MERGE</text>
+<rect x="1080" y="140" width="420" height="132" rx="14" fill="#ffffff" stroke="#e4d3df"/>
+<rect x="1080" y="140" width="6" height="132" rx="3" fill="#9a3a6b"/>
+<text x="1102" y="170" font-size="16" font-weight="700" fill="#150d16">Link Availability Contract</text>
+<text x="1102" y="190" font-size="12.5" fill="#6e5867">design note</text>
+<text x="1102" y="221" font-size="13" fill="#33202c">link minting may degrade if API is down</text>
+<text x="1102" y="241" font-size="13" fill="#33202c">stored opt-outs remain authoritative</text>
+<rect x="1100" y="255" width="230" height="24" rx="7" fill="#faf4f8"/>
+<text x="1110" y="272" font-size="11.5" fill="#9a3a6b" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">unsubscribe lookup fails closed</text>
+<rect x="60" y="796" width="420" height="112" rx="14" fill="#ffffff" stroke="#e4d3df"/>
+<rect x="60" y="796" width="6" height="112" rx="3" fill="#1f1420"/>
+<text x="82" y="826" font-size="16" font-weight="700" fill="#150d16">Success Page</text>
+<text x="82" y="846" font-size="12.5" fill="#6e5867">unsubscribe confirmed</text>
+<rect x="80" y="871" width="216" height="24" rx="7" fill="#f5ecf2"/>
+<text x="90" y="888" font-size="11.5" fill="#6b2d5c" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace">rendered after MERGE commits</text>
+<polyline points="780,752 780,852 480,852" fill="none" stroke="#1f1420" stroke-width="2" marker-end="url(#arr)"/>
+<text x="550" y="918" font-size="12" fill="#6e5867">UAT gate: GET confirmation, POST mutation, BigQuery write and cleanup verified end-to-end before activation</text>
 </svg>
