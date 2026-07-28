@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Mirrors the "Repository Verification" section of the README.
+      - name: Compile published services
+        run: python -m compileall services
+
+      - name: Run behavioural tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Parse SVG diagrams
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          diagrams = sorted(Path("docs/assets").glob("*.svg"))
+          assert diagrams, "no SVG diagrams found in docs/assets"
+          for diagram in diagrams:
+              ET.parse(diagram)
+          print(f"verified {len(diagrams)} SVG diagrams")
+          PY
+
+      - name: Check documentation links resolve
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          pattern = re.compile(r"\[[^\]]+\]\((?!https?://|#)([^)#]+)")
+          missing = []
+          for doc in sorted(Path(".").rglob("*.md")):
+              if ".github" in doc.parts:
+                  continue
+              for target in pattern.findall(doc.read_text(encoding="utf-8")):
+                  if not (doc.parent / target).exists():
+                      missing.append(f"{doc}: {target}")
+          if missing:
+              raise SystemExit("unresolved relative links:\n" + "\n".join(missing))
+          print("all relative documentation links resolve")
+          PY
